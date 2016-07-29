@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet", "SportMeet.csproj", "{9CF254D9-12DE-45BC-BF2B-813370EB6A42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Droid", "SportMeet.Droid.csproj", "{9CF254D9-12DE-45BC-BF2B-813370EB6A42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Core", "..\SportMeet.Core\SportMeet.Core.csproj", "{C65445B9-3BEC-460C-AD29-F4FA8DD6953A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Services", "SportMeet.Services\SportMeet.Services.csproj", "{1A481382-CF24-450B-92C6-447D84D6A3F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Services.Tests", "SportMeet.Services.Tests\SportMeet.Services.Tests.csproj", "{AAC2AA10-317C-4BE3-B81A-6168D865868F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +23,18 @@ Global
 		{9CF254D9-12DE-45BC-BF2B-813370EB6A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF254D9-12DE-45BC-BF2B-813370EB6A42}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9CF254D9-12DE-45BC-BF2B-813370EB6A42}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C65445B9-3BEC-460C-AD29-F4FA8DD6953A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65445B9-3BEC-460C-AD29-F4FA8DD6953A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65445B9-3BEC-460C-AD29-F4FA8DD6953A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65445B9-3BEC-460C-AD29-F4FA8DD6953A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A481382-CF24-450B-92C6-447D84D6A3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A481382-CF24-450B-92C6-447D84D6A3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A481382-CF24-450B-92C6-447D84D6A3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A481382-CF24-450B-92C6-447D84D6A3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC2AA10-317C-4BE3-B81A-6168D865868F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC2AA10-317C-4BE3-B81A-6168D865868F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC2AA10-317C-4BE3-B81A-6168D865868F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC2AA10-317C-4BE3-B81A-6168D865868F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

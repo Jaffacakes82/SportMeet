@@ -7,10 +7,9 @@
         android:layout_width="match_parent"
         android:layout_height="51.0dp"
         android:layout_marginLeft="33.5dp"
-        android:layout_marginTop="12.0dp"
+        android:layout_marginTop="74.5dp"
         android:layout_marginRight="33.5dp"
         android:id="@+id/TextRegisterUsername"
-        android:textColorHint="#80FFFFFF"
         android:hint="Username" />
     <EditText
         android:layout_width="match_parent"
@@ -19,7 +18,6 @@
         android:layout_marginTop="12.0dp"
         android:layout_marginRight="33.5dp"
         android:id="@+id/TextRegisterEmail"
-        android:textColorHint="#80FFFFFF"
         android:hint="Email" />
     <EditText
         android:layout_width="match_parent"
@@ -28,7 +26,6 @@
         android:layout_marginTop="12.0dp"
         android:layout_marginRight="33.5dp"
         android:id="@+id/TextRegisterFirstName"
-        android:textColorHint="#80FFFFFF"
         android:hint="First name" />
     <EditText
         android:layout_width="match_parent"
@@ -37,7 +34,6 @@
         android:layout_marginTop="12.0dp"
         android:layout_marginRight="33.5dp"
         android:id="@+id/TextRegisterLastName"
-        android:textColorHint="#80FFFFFF"
         android:hint="Last name" />
     <EditText
         android:inputType="textPassword"
@@ -47,7 +43,6 @@
         android:layout_marginTop="12.0dp"
         android:layout_marginRight="33.5dp"
         android:id="@+id/TextRegisterPasswordOne"
-        android:textColorHint="#80FFFFFF"
         android:hint="Password" />
     <EditText
         android:inputType="textPassword"
@@ -57,7 +52,6 @@
         android:layout_marginTop="12.0dp"
         android:layout_marginRight="33.5dp"
         android:id="@+id/TextRegisterPasswordTwo"
-        android:textColorHint="#80FFFFFF"
         android:hint="Confirm password" />
     <Button
         android:text="Register"
@@ -73,6 +67,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5.0dp"
         android:layout_marginLeft="33.5dp"
-        android:layout_marginRight="33.5dp" 
-        android:id="@+id/ButtonRegisterCancel" />/>
+        android:layout_marginRight="33.5dp"
+        android:id="@+id/ButtonRegisterCancel" />
 </LinearLayout>

@@ -7,6 +7,7 @@
 namespace SportMeet
 {
     using System;
+    using Activities;
     using Android.App;
     using Android.OS;
     using Android.Widget;
@@ -57,7 +58,7 @@ namespace SportMeet
         /// <param name="e">Event arguments</param>
         private void RegisterButton_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            this.StartActivity(typeof(RegisterActivity));
         }
     }
 }

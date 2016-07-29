@@ -4,17 +4,15 @@
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1">
-    <EditText
-        p1:layout_width="match_parent"
-        p1:layout_height="51dp"
-        p1:id="@+id/TextUsername"
-        p1:hint="Username"
-        p1:layout_marginTop="138.0dp"
-        p1:layout_marginLeft="33.5dp"
-        p1:layout_marginRight="33.5dp"
-        p1:foregroundTint="#b4b4b4ff"
-        p1:fadingEdge="horizontal"
-        p1:textColorHint="#80FFFFFF" />
+  <EditText
+      p1:layout_width="match_parent"
+      p1:layout_height="51dp"
+      p1:id="@+id/TextUsername"
+      p1:hint="Username"
+      p1:layout_marginTop="138.0dp"
+      p1:layout_marginLeft="33.5dp"
+      p1:layout_marginRight="33.5dp"
+      p1:fadingEdge="horizontal" />
     <EditText
         p1:inputType="textPassword"
         p1:layout_width="match_parent"
@@ -23,8 +21,7 @@
         p1:layout_height="51.0dp"
         p1:layout_marginLeft="33.5dp"
         p1:layout_marginTop="12.0dp"
-        p1:layout_marginRight="33.5dp"
-        p1:textColorHint="#80FFFFFF" />
+        p1:layout_marginRight="33.5dp" />
     <Button
         p1:text="Login"
         p1:layout_width="match_parent"
