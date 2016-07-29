@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="51.0dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginTop="12.0dp"
+        android:layout_marginRight="33.5dp"
+        android:id="@+id/TextRegisterUsername"
+        android:textColorHint="#80FFFFFF"
+        android:hint="Username" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="51.0dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginTop="12.0dp"
+        android:layout_marginRight="33.5dp"
+        android:id="@+id/TextRegisterEmail"
+        android:textColorHint="#80FFFFFF"
+        android:hint="Email" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="51.0dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginTop="12.0dp"
+        android:layout_marginRight="33.5dp"
+        android:id="@+id/TextRegisterFirstName"
+        android:textColorHint="#80FFFFFF"
+        android:hint="First name" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="51.0dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginTop="12.0dp"
+        android:layout_marginRight="33.5dp"
+        android:id="@+id/TextRegisterLastName"
+        android:textColorHint="#80FFFFFF"
+        android:hint="Last name" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="51.0dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginTop="12.0dp"
+        android:layout_marginRight="33.5dp"
+        android:id="@+id/TextRegisterPasswordOne"
+        android:textColorHint="#80FFFFFF"
+        android:hint="Password" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="51.0dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginTop="12.0dp"
+        android:layout_marginRight="33.5dp"
+        android:id="@+id/TextRegisterPasswordTwo"
+        android:textColorHint="#80FFFFFF"
+        android:hint="Confirm password" />
+    <Button
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginRight="33.5dp"
+        android:id="@+id/ButtonRegisterConfirm" />
+    <Button
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginRight="33.5dp" 
+        android:id="@+id/ButtonRegisterCancel" />/>
+</LinearLayout>
