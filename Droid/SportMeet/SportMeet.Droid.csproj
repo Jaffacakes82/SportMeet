@@ -89,6 +89,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\theme.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SportMeet.Services\SportMeet.Services.csproj">
+      <Project>{1A481382-CF24-450B-92C6-447D84D6A3F3}</Project>
+      <Name>SportMeet.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
