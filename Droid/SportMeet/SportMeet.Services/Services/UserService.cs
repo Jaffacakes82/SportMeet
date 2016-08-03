@@ -1,5 +1,5 @@
 ﻿//------------------------------------------------------------------------
-// <copyright file="IRegisterService.cs" company="Joseph Ellis Software">
+// <copyright file="UserService.cs" company="Joseph Ellis Software">
 //     Copyright (c) Joseph Ellis Software. All rights reserved.
 // </copyright>
 //------------------------------------------------------------------------
@@ -11,15 +11,16 @@ namespace SportMeet.Services.Services
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using RestSharp;
     using SportMeet.Services.Contracts;
 
     /// <summary>
-    /// The service implementation for the registration contract
+    /// The service implementation for the user service contract
     /// </summary>
-    public class RegisterService : IRegisterService
+    public class UserService : IUserService
     {
         /// <inheritdoc />
-        public bool Register(string username, string email, string firstName, string lastName, string passwordOne, string passwordTwo)
+        public bool Register(string username, string emailAddress, string firstName, string lastName, string passwordOne, string passwordTwo)
         {
             throw new NotImplementedException();
         }

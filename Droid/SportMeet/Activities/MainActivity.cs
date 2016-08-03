@@ -1,19 +1,26 @@
-﻿//------------------------------------------------------------------------
+//------------------------------------------------------------------------
 // <copyright file="MainActivity.cs" company="Joseph Ellis Software">
 //     Copyright (c) Joseph Ellis Software. All rights reserved.
 // </copyright>
 //------------------------------------------------------------------------
 
-namespace SportMeet
+namespace SportMeet.Activities
 {
     using System;
-    using Activities;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
     using Android.App;
+    using Android.Content;
     using Android.OS;
+    using Android.Runtime;
+    using Android.Views;
     using Android.Widget;
+    using Core.Configuration;
 
     /// <summary>
-    /// Entry point for the application
+    /// Main entry point to the application
     /// </summary>
     [Activity(Label = "SportMeet", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
@@ -21,44 +28,20 @@ namespace SportMeet
         /// <summary>
         /// Entry point for the activity
         /// </summary>
-        /// <param name="bundle">Android bundle</param>
+        /// <param name="bundle">The bundle</param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            this.SetContentView(Resource.Layout.Main);
-            this.AddBindings();
-        }
 
-        /// <summary>
-        /// Adds event bindings
-        /// </summary>
-        private void AddBindings()
-        {
-            Button registerButton = FindViewById<Button>(Resource.Id.ButtonRegister);
-            registerButton.Click += this.RegisterButton_Click;
+            ISharedPreferences sharedPrefs = Application.Context.GetSharedPreferences(Configuration.ApplicationName, FileCreationMode.Private);
+            string savedUsername = sharedPrefs.GetString("Username", string.Empty);
+            string savedPassword = sharedPrefs.GetString("Password", string.Empty);
 
-            Button loginButton = FindViewById<Button>(Resource.Id.ButtonLogin);
-            loginButton.Click += this.LoginButton_Click;
-        }
-
-        /// <summary>
-        /// Event handler for the login button
-        /// </summary>
-        /// <param name="sender">Sender object</param>
-        /// <param name="e">Event arguments</param>
-        private void LoginButton_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <summary>
-        /// Event handler for the register button
-        /// </summary>
-        /// <param name="sender">Sender object</param>
-        /// <param name="e">Event arguments</param>
-        private void RegisterButton_Click(object sender, EventArgs e)
-        {
-            this.StartActivity(typeof(RegisterActivity));
+            if (string.IsNullOrWhiteSpace(savedUsername) || string.IsNullOrWhiteSpace(savedPassword))
+            {
+                this.StartActivity(typeof(LoginActivity));
+                this.Finish();
+            }
         }
     }
 }

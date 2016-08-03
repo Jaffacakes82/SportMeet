@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\LoginActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\RegisterActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -63,7 +64,7 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml">
+    <AndroidResource Include="Resources\layout\Login.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -90,6 +91,10 @@
     <AndroidResource Include="Resources\values\theme.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SportMeet.Core\SportMeet.Core.csproj">
+      <Project>{c65445b9-3bec-460c-ad29-f4fa8dd6953a}</Project>
+      <Name>SportMeet.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="SportMeet.Services\SportMeet.Services.csproj">
       <Project>{1A481382-CF24-450B-92C6-447D84D6A3F3}</Project>
       <Name>SportMeet.Services</Name>

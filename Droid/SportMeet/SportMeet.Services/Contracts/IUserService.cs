@@ -1,5 +1,5 @@
 ﻿//------------------------------------------------------------------------
-// <copyright file="IRegisterService.cs" company="Joseph Ellis Software">
+// <copyright file="IUserService.cs" company="Joseph Ellis Software">
 //     Copyright (c) Joseph Ellis Software. All rights reserved.
 // </copyright>
 //------------------------------------------------------------------------
@@ -13,9 +13,9 @@ namespace SportMeet.Services.Contracts
     using System.Threading.Tasks;
 
     /// <summary>
-    /// The contract for the registration service
+    /// The contract for the user service
     /// </summary>
-    public interface IRegisterService
+    public interface IUserService
     {
         /// <summary>
         /// Registers the user with the system
@@ -25,7 +25,7 @@ namespace SportMeet.Services.Contracts
         /// <param name="firstName">The users first name</param>
         /// <param name="lastName">The users last name</param>
         /// <param name="passwordOne">The users password</param>
-        /// <param name="passwordTwo">The users password</param>
+        /// <param name="passwordTwo">The users repeated password</param>
         /// <returns>True or false, depending on whether registration failed</returns>
         bool Register(string username, string email, string firstName, string lastName, string passwordOne, string passwordTwo);
     }

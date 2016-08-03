@@ -11,17 +11,19 @@ namespace SportMeet.Activities
     using Android.Text;
     using Android.Widget;
     using Services.Contracts;
+    using Services.Services;
 
     /// <summary>
     /// The Register Activity
     /// </summary>
-    [Activity(Label = "RegisterActivity")]
+    [Activity(Label = "SportMeet")]
     public class RegisterActivity : Activity
     {
         /// <summary>
         /// Gets or sets the username text from the form
         /// </summary>
         private EditText UsernameText { get; set; }
+
         /// <summary>
         /// Gets or sets the email text from the form
         /// </summary>
@@ -60,7 +62,7 @@ namespace SportMeet.Activities
         /// <summary>
         /// Gets or sets the register service
         /// </summary>
-        private IRegisterService RegisterService { get; set; }
+        private new IUserService UserService { get; set; }
 
         /// <summary>
         /// Entry point for the register activity
@@ -87,6 +89,7 @@ namespace SportMeet.Activities
             this.LastNameText = this.FindViewById<EditText>(Resource.Id.TextRegisterLastName);
             this.PasswordOneText = this.FindViewById<EditText>(Resource.Id.TextRegisterPasswordOne);
             this.PasswordTwoText = this.FindViewById<EditText>(Resource.Id.TextRegisterPasswordTwo);
+            this.UserService = new UserService();
         }
 
         /// <summary>
@@ -136,7 +139,13 @@ namespace SportMeet.Activities
             }
             else
             {
-                
+                bool success = this.UserService.Register(
+                    this.UsernameText.Text.Trim(),
+                    this.EmailText.Text.Trim(),
+                    this.FirstNameText.Text.Trim(),
+                    this.LastNameText.Text.Trim(),
+                    this.PasswordOneText.Text.Trim(),
+                    this.PasswordTwoText.Text.Trim());
             }
         }
     }
