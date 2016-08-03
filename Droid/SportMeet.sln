@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Droid", "SportMeet.Droid.csproj", "{9CF254D9-12DE-45BC-BF2B-813370EB6A42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Droid", "SportMeet.Droid\SportMeet.Droid.csproj", "{9CF254D9-12DE-45BC-BF2B-813370EB6A42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Core", "..\SportMeet.Core\SportMeet.Core.csproj", "{C65445B9-3BEC-460C-AD29-F4FA8DD6953A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Core", "SportMeet.Core\SportMeet.Core.csproj", "{C65445B9-3BEC-460C-AD29-F4FA8DD6953A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportMeet.Services", "SportMeet.Services\SportMeet.Services.csproj", "{1A481382-CF24-450B-92C6-447D84D6A3F3}"
 EndProject
