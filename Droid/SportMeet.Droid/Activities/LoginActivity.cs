@@ -10,6 +10,8 @@ namespace SportMeet
     using Activities;
     using Android.App;
     using Android.OS;
+    using Android.Views;
+    using Android.Views.Animations;
     using Android.Widget;
 
     /// <summary>
@@ -27,6 +29,21 @@ namespace SportMeet
             base.OnCreate(bundle);
             this.SetContentView(Resource.Layout.Login);
             this.AddBindings();
+
+            ImageView tickImage = FindViewById<ImageView>(Resource.Id.ImageRegistrationSuccessful);
+            TextView succesText = FindViewById<TextView>(Resource.Id.TextRegistrationSuccessful);
+            tickImage.Visibility = ViewStates.Invisible;
+            succesText.Visibility = ViewStates.Invisible;
+
+            bool registrationSuccess = this.Intent.GetBooleanExtra("RegistrationSuccess", false);
+
+            if (registrationSuccess)
+            {
+                tickImage.Visibility = ViewStates.Visible;
+                succesText.Visibility = ViewStates.Visible;
+                tickImage.StartAnimation(AnimationUtils.LoadAnimation(this.ApplicationContext, Resource.Animation.fade_in));
+                succesText.StartAnimation(AnimationUtils.LoadAnimation(this.ApplicationContext, Resource.Animation.fade_in));
+            }
         }
 
         /// <summary>
@@ -59,6 +76,7 @@ namespace SportMeet
         private void RegisterButton_Click(object sender, EventArgs e)
         {
             this.StartActivity(typeof(RegisterActivity));
+            this.Finish();
         }
     }
 }

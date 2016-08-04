@@ -5,12 +5,12 @@
   <style name="Theme.SportMeet" parent="@android:style/Theme.Material.Light.NoActionBar.Fullscreen">
     <item name="android:colorBackground">@color/theme_sportmeet_background</item>
     <item name="android:windowBackground">?android:attr/colorBackground</item>
-    <item name="android:colorPrimary">#ffb3e5fc</item>
-    <item name="android:colorPrimaryDark">#ff1565c0</item>
-    <item name="android:colorButtonNormal">#ff42a5f5</item>
-    <item name="android:textColorPrimary">#ff01579b</item>
-    <item name="android:textColorSecondary">#ff448aff</item>
-    <item name="android:colorAccent">#ffd2d2d2</item>
-    <item name="android:colorControlActivated">#ff42a5f5</item>
-  <item name="android:colorControlNormal">#ff90caf9</item></style>
+    <item name="android:colorPrimary">#ff64ffda</item>
+    <item name="android:colorPrimaryDark">#ff1de9b6</item>
+    <item name="android:colorButtonNormal">#ff1de9b6</item>
+    <item name="android:textColorPrimary">#ff004d40</item>
+    <item name="android:textColorSecondary">#ff004d40</item>
+    <item name="android:colorAccent">#ff9e9e9e</item>
+    <item name="android:colorControlActivated">#ff009688</item>
+  <item name="android:colorControlNormal">#ff1de9b6</item></style>
 </resources>

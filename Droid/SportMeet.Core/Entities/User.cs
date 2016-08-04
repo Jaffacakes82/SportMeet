@@ -9,6 +9,7 @@ namespace SportMeet.Core.Entities
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Runtime.Serialization;
     using System.Text;
     using System.Threading.Tasks;
 
@@ -17,6 +18,13 @@ namespace SportMeet.Core.Entities
     /// </summary>
     public class User
     {
+        /// <summary>
+        /// Initialises a new instance of the <see cref="User"/> class /> 
+        /// </summary>
+        public User()
+        {
+        }
+
         /// <summary>
         /// Initialises a new instance of the <see cref="User" /> class /> 
         /// </summary>

@@ -36,13 +36,21 @@
   <ItemGroup>
     <Compile Include="Contracts\IUserService.cs" />
     <Compile Include="Contracts\IRestService.cs" />
+    <Compile Include="Helpers\GlobalHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\RestService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="RestSharp">
-      <HintPath>..\..\Lib\RestSharp.dll</HintPath>
+      <HintPath>..\Lib\RestSharp.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SportMeet.Core\SportMeet.Core.csproj">
+      <Project>{C65445B9-3BEC-460C-AD29-F4FA8DD6953A}</Project>
+      <Name>SportMeet.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

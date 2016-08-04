@@ -7,8 +7,10 @@
 namespace SportMeet.Activities
 {
     using Android.App;
+    using Android.Content;
     using Android.OS;
     using Android.Text;
+    using Android.Views;
     using Android.Widget;
     using Services.Contracts;
     using Services.Services;
@@ -60,6 +62,11 @@ namespace SportMeet.Activities
         private Button RegisterCancelButton { get; set; }
 
         /// <summary>
+        /// Gets or sets the registration error text
+        /// </summary>
+        private TextView RegisterErrorText { get; set; }
+
+        /// <summary>
         /// Gets or sets the register service
         /// </summary>
         private new IUserService UserService { get; set; }
@@ -74,6 +81,7 @@ namespace SportMeet.Activities
             this.SetContentView(Resource.Layout.Register);
             this.SetProperties();
             this.AddBindings();
+            this.RegisterErrorText.Visibility = ViewStates.Invisible;
         }
 
         /// <summary>
@@ -89,6 +97,8 @@ namespace SportMeet.Activities
             this.LastNameText = this.FindViewById<EditText>(Resource.Id.TextRegisterLastName);
             this.PasswordOneText = this.FindViewById<EditText>(Resource.Id.TextRegisterPasswordOne);
             this.PasswordTwoText = this.FindViewById<EditText>(Resource.Id.TextRegisterPasswordTwo);
+            this.RegisterErrorText = this.FindViewById<TextView>(Resource.Id.TextRegistrationFailed);
+
             this.UserService = new UserService();
         }
 
@@ -146,6 +156,18 @@ namespace SportMeet.Activities
                     this.LastNameText.Text.Trim(),
                     this.PasswordOneText.Text.Trim(),
                     this.PasswordTwoText.Text.Trim());
+
+                if (success)
+                {
+                    Intent loginActivity = new Intent(this, typeof(LoginActivity));
+                    loginActivity.PutExtra("RegistrationSuccess", true);
+                    this.StartActivity(loginActivity);
+                    this.Finish();
+                }
+                else
+                {
+                    this.RegisterErrorText.Visibility = ViewStates.Visible;
+                }
             }
         }
     }

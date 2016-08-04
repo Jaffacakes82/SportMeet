@@ -3,11 +3,20 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:text="Registration failed. Please try again."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextRegistrationFailed"
+        android:gravity="center"
+        android:layout_marginTop="24.0dp"
+        android:textColor="@android:color/holo_red_dark" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="51.0dp"
         android:layout_marginLeft="33.5dp"
-        android:layout_marginTop="74.5dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="33.5dp"
         android:id="@+id/TextRegisterUsername"
         android:hint="Username" />
@@ -56,7 +65,7 @@
     <Button
         android:text="Register"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="61dp"
         android:layout_marginTop="5.0dp"
         android:layout_marginLeft="33.5dp"
         android:layout_marginRight="33.5dp"
@@ -64,7 +73,7 @@
     <Button
         android:text="Cancel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="61dp"
         android:layout_marginTop="5.0dp"
         android:layout_marginLeft="33.5dp"
         android:layout_marginRight="33.5dp"

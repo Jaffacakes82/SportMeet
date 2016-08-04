@@ -4,12 +4,29 @@
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1">
+    <ImageView
+        p1:src="@drawable/registrationsuccessful"
+        p1:layout_width="match_parent"
+        p1:layout_height="40dp"
+        p1:id="@+id/ImageRegistrationSuccessful"
+        p1:layout_marginTop="32.5dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:visibility="invisible" />
+    <TextView
+        p1:text="Registration successful! Please sign in."
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/TextRegistrationSuccessful"
+        p1:gravity="center"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:visibility="invisible" />
     <EditText
         p1:layout_width="match_parent"
         p1:layout_height="51dp"
         p1:id="@+id/TextUsername"
         p1:hint="Username"
-        p1:layout_marginTop="138.0dp"
+        p1:layout_marginTop="40.0dp"
         p1:layout_marginLeft="33.5dp"
         p1:layout_marginRight="33.5dp"
         p1:fadingEdge="horizontal" />

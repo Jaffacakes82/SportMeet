@@ -4,6 +4,8 @@
 // </copyright>
 //------------------------------------------------------------------------
 
+using SportMeet.Core.Entities;
+
 namespace SportMeet.Services.Contracts
 {
     /// <summary>
@@ -16,13 +18,13 @@ namespace SportMeet.Services.Contracts
         /// </summary>
         /// <param name="url">The URL to GET</param>
         /// <returns>The response</returns>
-        string Get(string url);
+        T Get<T>(string url) where T : new();
 
         /// <summary>
         /// POSTs a resource to a URL
         /// </summary>
         /// <param name="url">The URL to POST to</param>
         /// <returns>The response</returns>
-        string Post(string url);
+        T Post<T>(string url, object obj) where T : new();
     }
 }

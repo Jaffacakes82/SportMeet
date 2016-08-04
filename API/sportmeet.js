@@ -22,7 +22,14 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 
-app.use('/', api);
+app.use('/api', api);
+
+/* GET home page. */
+app.get('/', function (req, res, next) {
+    res.render('index', {
+        title: 'SportMeet'
+    });
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
