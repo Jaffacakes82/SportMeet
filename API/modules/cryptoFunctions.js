@@ -2,8 +2,6 @@ var crypto = require('crypto');
 var bcrypt = require('bcrypt-nodejs');
 var config = require('config');
 var ALGORITHM = 'AES-256-CTR';
-var HMAC_ALGORITHM = 'SHA256';
-
 
 module.exports = {
     encrypt: function (data) {
