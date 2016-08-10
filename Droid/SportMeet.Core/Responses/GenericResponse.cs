@@ -3,7 +3,7 @@
 //     Copyright (c) Joseph Ellis Software. All rights reserved.
 // </copyright>
 //------------------------------------------------------------------------
-namespace SportMeet.Core.Entities
+namespace SportMeet.Core.Responses
 {
     using System;
     using System.Collections.Generic;

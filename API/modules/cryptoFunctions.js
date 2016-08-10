@@ -19,6 +19,12 @@ module.exports = {
         return decrypted;
     },
     hash: function (data) {
-
+        return bcrypt.hashSync(data);
+    },
+    compare: function (data, hash) {
+        return bcrypt.compareSync(data, hash);
+    },
+    getRandomString: function () {
+        return crypto.randomBytes(24).toString('base64');
     }
 }

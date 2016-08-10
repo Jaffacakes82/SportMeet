@@ -154,8 +154,7 @@ namespace SportMeet.Activities
                     this.EmailText.Text.Trim(),
                     this.FirstNameText.Text.Trim(),
                     this.LastNameText.Text.Trim(),
-                    this.PasswordOneText.Text.Trim(),
-                    this.PasswordTwoText.Text.Trim());
+                    this.PasswordOneText.Text.Trim());
 
                 if (success)
                 {

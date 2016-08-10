@@ -27,6 +27,14 @@ namespace SportMeet.Services.Contracts
         /// <param name="passwordOne">The users password</param>
         /// <param name="passwordTwo">The users repeated password</param>
         /// <returns>True or false, depending on whether registration failed</returns>
-        bool Register(string username, string email, string firstName, string lastName, string passwordOne, string passwordTwo);
+        bool Register(string username, string email, string firstName, string lastName, string password);
+
+        /// <summary>
+        /// Attempts to log the user in to the application
+        /// </summary>
+        /// <param name="username">The users username</param>
+        /// <param name="password">The users password</param>
+        /// <returns>True or false, depending on whether login was successful</returns>
+        string Login(string username, string password);
     }
 }

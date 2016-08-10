@@ -35,15 +35,14 @@ namespace SportMeet.Core.Entities
         /// <param name="lastName">The last name</param>
         /// <param name="passwordOne">The password one</param>
         /// <param name="passwordTwo">The password two</param>
-        public User(Guid id, string username, string emailAddress, string firstName, string lastName, string passwordOne, string passwordTwo)
+        public User(Guid id, string username, string emailAddress, string firstName, string lastName, string password)
         {
             this.Id = id;
             this.Username = username;
             this.EmailAddress = emailAddress;
             this.FirstName = firstName;
             this.LastName = lastName;
-            this.PasswordOne = passwordOne;
-            this.PasswordTwo = passwordTwo;
+            this.Password = password;
         }
 
         /// <summary>
@@ -55,15 +54,14 @@ namespace SportMeet.Core.Entities
         /// <param name="lastName">The last name</param>
         /// <param name="passwordOne">The password one</param>
         /// <param name="passwordTwo">The password two</param>
-        public User(string username, string emailAddress, string firstName, string lastName, string passwordOne, string passwordTwo)
+        public User(string username, string emailAddress, string firstName, string lastName, string password)
         {
             this.Id = Guid.NewGuid();
             this.Username = username;
             this.EmailAddress = emailAddress;
             this.FirstName = firstName;
             this.LastName = lastName;
-            this.PasswordOne = passwordOne;
-            this.PasswordTwo = passwordTwo;
+            this.Password = password;
         }
 
         /// <summary>
@@ -99,11 +97,6 @@ namespace SportMeet.Core.Entities
         /// <summary>
         /// Gets or sets the users password one
         /// </summary>
-        public virtual string PasswordOne { get; set; }
-
-        /// <summary>
-        /// Gets or sets the users password two
-        /// </summary>
-        public virtual string PasswordTwo { get; set; }
+        public virtual string Password { get; set; }
     }
 }
